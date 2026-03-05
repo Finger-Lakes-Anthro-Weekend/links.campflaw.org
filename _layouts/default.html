@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="/assets/style.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="F.L.A.W." />
+    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+
+
+    <!-- Search Engine -->
+    <meta name="title" content="Finger Lakes Anthro Weekend">
+    <meta name="description"
+        content="Finger Lakes Anthro Weekend is an annual furry weekend getaway to the summer camp of your childhood. Located in Penn Yan, NY, F.L.A.W. is complete with cabins, a main lodge, and outdoor activities right on Seneca Lake." />
+    <meta name="theme-color" content="#234c41">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={{site.url}} />
+    <meta property="og:title" content={{site.title}} />
+    <meta property="og:description"
+        content="Finger Lakes Anthro Weekend is an annual furry weekend getaway to the summer camp of your childhood. Located in Penn Yan, NY, F.L.A.W. is complete with cabins, a main lodge, and outdoor activities right on Seneca Lake." />
+    <meta property="og:image" content="{{layout.embed-img}}" />
+
+    <!-- X (Twitter) -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={{site.url}} />
+    <meta property="twitter:title" content={{site.title}} />
+    <meta property="twitter:description"
+        content="Finger Lakes Anthro Weekend is an annual furry weekend getaway to the summer camp of your childhood. Located in Penn Yan, NY, F.L.A.W. is complete with cabins, a main lodge, and outdoor activities right on Seneca Lake." />
+    <meta property="twitter:image" content="{{layout.embed-img}}" />
+
+    <title>{{ site.title }}</title>
+</head>
+
+<body>
+    <main>
+        {{ content }}
+        {% include footer.html %}
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
