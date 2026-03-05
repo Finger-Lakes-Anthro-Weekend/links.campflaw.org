@@ -55,6 +55,7 @@ body {
     color: white;
     background: #198754;
     background: linear-gradient(180deg, #179158 0%, #198754 100%);
+    width: 90% !important;
 }
 
 .hover-effect {
@@ -98,6 +99,10 @@ body {
     .w-lg-25 {
         width: 25% !important;
     }
+
+    .social-link {
+        width: 75% !important;
+    }
 }
 
 @media ((min-width: 1000px) and (max-width: 1349px)) {
@@ -107,6 +112,10 @@ body {
 
     .w-md-25 {
         width: 25% !important;
+    }
+
+    .social-link {
+        width: 75% !important;
     }
 }
 
